@@ -1,0 +1,32 @@
+[versions]
+jdk = "20"
+javaTarget = "19"
+kotlin = "1.8.22"
+springboot = "3.1.1"
+archunit = "1.0.1"
+jib = "3.3.2"
+kotlinLogging = "4.0.0"
+logback = "1.4.8"
+junit = "5.9.1"
+assertj = "3.24.2"
+liquibase = "4.20.0"
+h2 = "2.1.214"
+
+[libraries]
+archunit = { module = "com.tngtech.archunit:archunit-junit5", version.ref = "archunit" }
+springbootGradlePlugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springboot" }
+kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinLogging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlinLogging" }
+logbackClassic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+junitBom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit = { module = "org.junit.jupiter:junit-jupiter" }
+assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+springbootStarter = { module = "org.springframework.boot:spring-boot-starter" }
+springbootStarterTest = { module = "org.springframework.boot:spring-boot-starter-test" }
+springbootStarterWeb = { module = "org.springframework.boot:spring-boot-starter-web" }
+springbootStarterDataJpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+liquibase = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
+h2 = { module = "com.h2database:h2", version.ref = "h2" }
+
+[plugins]
+jib = { id = "com.google.cloud.tools.jib", version.ref = "jib" }
