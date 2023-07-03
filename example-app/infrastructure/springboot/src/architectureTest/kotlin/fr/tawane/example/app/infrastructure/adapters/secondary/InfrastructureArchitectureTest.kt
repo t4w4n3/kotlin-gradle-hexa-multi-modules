@@ -1,4 +1,4 @@
-package fr.tawane.example.app.infrastructure.adapters.secondary.springboot
+package fr.tawane.example.app.infrastructure.adapters.secondary
 
 import com.tngtech.archunit.core.domain.JavaClass
 import com.tngtech.archunit.core.importer.ClassFileImporter

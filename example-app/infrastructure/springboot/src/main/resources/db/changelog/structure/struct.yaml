@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1686660407925-1
+      author: User1
+      changes:
+        - createTable:
+            tableName: Thing
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                  name: ID
+                  type: UUID
+              - column:
+                  constraints:
+                    nullable: false
+                  name: NAME
+                  type: VARCHAR(512)

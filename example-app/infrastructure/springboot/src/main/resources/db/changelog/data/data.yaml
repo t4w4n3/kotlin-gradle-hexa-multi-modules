@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: one
+      author: User1
+      changes:
+        - insert:
+            tableName: thing
+            columns:
+              - column:
+                  name: id
+                  value: 1a75ef82-1928-4c2a-abe9-83b8e2f8814e
+              - column:
+                  name: name
+                  value: allowed
+        - insert:
+            tableName: thing
+            columns:
+              - column:
+                  name: id
+                  value: 4dc119ae-bdb6-4d97-94f0-fdfa7f47e45f
+              - column:
+                  name: name
+                  value: name forbidden
