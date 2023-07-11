@@ -1,1 +1,1 @@
-# Kotlin Gradle heaxagonale multi modules
+# Kotlin Gradle hexagonale multi modules
