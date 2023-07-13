@@ -1,7 +1,7 @@
 [versions]
 jdk = "20"
 javaTarget = "19"
-kotlin = "1.8.22"
+kotlin = "1.9.0"
 springboot = "3.1.1"
 archunit = "1.0.1"
 jib = "3.3.2"
