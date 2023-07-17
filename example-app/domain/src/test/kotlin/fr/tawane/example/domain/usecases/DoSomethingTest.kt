@@ -1,9 +1,9 @@
 package fr.tawane.example.domain.usecases
 
-import fr.tawane.example.app.domain.gateways.ForbiddenService
-import fr.tawane.example.app.domain.gateways.ThingRepository
 import fr.tawane.example.app.domain.model.DoSomethingQuery
 import fr.tawane.example.app.domain.model.Thing
+import fr.tawane.example.app.domain.ports.secondary.ForbiddenService
+import fr.tawane.example.app.domain.ports.secondary.ThingRepository
 import fr.tawane.example.app.domain.usecases.DoSomethingUsecase
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

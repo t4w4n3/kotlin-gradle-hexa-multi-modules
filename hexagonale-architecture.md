@@ -16,9 +16,19 @@ They belong to the domain layer.
 
 ## Ports
 
-Ports are interfaces implemented by Usecases.
+### Primary Ports
+
+Primary ports are interfaces implemented by usecases.
 
 They are used by the primary adapters to access the usecases from the domain layer.
+
+They belong to the domain layer.
+
+### Secondary Ports
+
+Secondary ports are interfaces implemented by secondary adapters from the infrastructure layer.
+
+They are used by the usecases to access the secondary adapters.
 
 They belong to the domain layer.
 
@@ -34,7 +44,7 @@ They belong to the application layer.
 
 ### Secondary Adapters
 
-Secondary adapters implement gateways from the domain layer.
+Secondary adapters implement secondary ports from the domain layer.
 
 They belong to the infrastructure layer.
 
@@ -52,7 +62,7 @@ They belong to the domain layer.
 
 They contain the business logic.
 
-They use gateways to access backing services like databases or external APIs.
+They use secondary ports to access backing services like databases or external APIs.
 
 They are exposed to the outside world through primary adapters.
 

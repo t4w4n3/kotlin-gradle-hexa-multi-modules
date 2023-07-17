@@ -1,9 +1,9 @@
 package fr.tawane.example.app.domain.usecases
 
-import fr.tawane.example.app.domain.gateways.ForbiddenService
-import fr.tawane.example.app.domain.gateways.ThingRepository
 import fr.tawane.example.app.domain.model.DoSomethingQuery
-import fr.tawane.example.app.domain.ports.DoSomething
+import fr.tawane.example.app.domain.ports.primary.DoSomething
+import fr.tawane.example.app.domain.ports.secondary.ForbiddenService
+import fr.tawane.example.app.domain.ports.secondary.ThingRepository
 
 class DoSomethingUsecase(
   private val thingRepository: ThingRepository,

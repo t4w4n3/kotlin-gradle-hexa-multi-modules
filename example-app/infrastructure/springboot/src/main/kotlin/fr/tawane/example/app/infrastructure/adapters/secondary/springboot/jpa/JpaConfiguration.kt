@@ -1,6 +1,6 @@
 package fr.tawane.example.app.infrastructure.adapters.secondary.springboot.jpa
 
-import fr.tawane.example.app.domain.gateways.ThingRepository
+import fr.tawane.example.app.domain.ports.secondary.ThingRepository
 import io.hypersistence.utils.spring.repository.BaseJpaRepositoryImpl
 import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.context.annotation.Bean

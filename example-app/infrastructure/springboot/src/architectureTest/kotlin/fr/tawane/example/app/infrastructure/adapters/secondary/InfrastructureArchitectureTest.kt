@@ -11,7 +11,7 @@ import com.tngtech.archunit.thirdparty.com.google.common.base.Preconditions
 import org.junit.jupiter.api.Test
 import java.util.regex.Pattern
 
-const val gatewaysPackage = "fr.tawane.example.app.domain.gateways"
+const val secondaryPortsPackage = "fr.tawane.example.app.domain.ports.secondary"
 const val secondaryAdaptersPackage = "fr.tawane.example.app.infrastructure.adapters.secondary"
 
 internal class InfrastructureArchitectureTest {
@@ -19,15 +19,17 @@ internal class InfrastructureArchitectureTest {
   private val excludeTestClasses = { location: Location -> location.matches(locationPattern).not() }
 
   @Test
-  internal fun `all secondary adapters should implement gateways`() {
+  internal fun `all secondary adapters should implement secondary ports`() {
     val importedClasses = ClassFileImporter()
       .withImportOption(excludeTestClasses)
       .importPackages(secondaryAdaptersPackage)
 
-    val implementAGateway = object : ArchCondition<JavaClass>("Implement a gateway") {
+    val implementAGateway = object : ArchCondition<JavaClass>("Implement a secondary port") {
       override fun check(javaClass: JavaClass, events: ConditionEvents) {
         val implementsAGateway: Boolean =
-          javaClass.isAnonymousClass || javaClass.hasAFrameworkAnnotation() || javaClass.implements(gatewaysPackage)
+          javaClass.isAnonymousClass || javaClass.hasAFrameworkAnnotation() || javaClass.implements(
+            secondaryPortsPackage,
+          )
         Preconditions.checkState(implementsAGateway, javaClass)
       }
     }
