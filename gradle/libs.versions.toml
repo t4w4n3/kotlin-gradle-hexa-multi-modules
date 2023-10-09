@@ -2,15 +2,15 @@
 jdk = "21"
 javaTarget = "20"
 kotlin = "1.9.10"
-springboot = "3.1.1"
+springboot = "3.1.4"
 archunit = "1.1.0"
 jib = "3.3.2"
-kotlinLogging = "4.0.0"
-logback = "1.4.8"
-junit = "5.9.1"
+kotlinLogging = "5.1.0"
+logback = "1.4.11"
+junit = "5.10.0"
 assertj = "3.24.2"
-liquibase = "4.20.0"
-h2 = "2.1.214"
+liquibase = "4.24.0"
+h2 = "2.2.224"
 
 [libraries]
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version.ref = "archunit" }
