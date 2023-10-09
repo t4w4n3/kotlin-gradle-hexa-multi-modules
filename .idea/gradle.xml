@@ -22,11 +22,10 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/example-app" />
             <option value="$PROJECT_DIR$/example-app/application" />
-            <option value="$PROJECT_DIR$/example-app/application/micronaut" />
             <option value="$PROJECT_DIR$/example-app/application/springboot" />
+            <option value="$PROJECT_DIR$/example-app/application/vanilla" />
             <option value="$PROJECT_DIR$/example-app/domain" />
             <option value="$PROJECT_DIR$/example-app/infrastructure" />
-            <option value="$PROJECT_DIR$/example-app/infrastructure/micronaut" />
             <option value="$PROJECT_DIR$/example-app/infrastructure/springboot" />
           </set>
         </option>
